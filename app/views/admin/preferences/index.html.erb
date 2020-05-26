@@ -1,0 +1,13 @@
+<h1>Set Preference</h1>
+
+<%= link_to "Go Back", songs_path %>
+
+<%= form_for([:admin, @preference]) do |f| %>
+  <%= f.label :allow_create_songs %>
+  <%= f.check_box :allow_create_songs %><br />
+
+  <%= f.label :allow_create_artists %>
+  <%= f.check_box :allow_create_artists %><br />
+
+  <%= f.submit %>
+<% end %>
